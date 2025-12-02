@@ -7,19 +7,57 @@
 </head>
 <body>
     <header>
-        <h1> <em>Hola a todos.</em> </h1>
+        <h1>Hola a todos.</h1>
         <h2>Bienvenidos a mi blog, que he hecho como proyecto del <strong>módulo 1</strong> del <strong>Course Frontend</strong> de Dev.F.</h2>
     <nav>
-        <a href="#">Inicio</a> |
-        <a href="#">Acerca de</a> |
-        <a href="#">Contacto</a>
+        <a href="#inicio">Inicio</a> |
+        <a href="#sobre-mi">Acerca de</a> |
+        <a href="#redes-sociales">Redes sociales</a> |
+        <a href="#contactame">Contáctame</a>
     </nav>
-   <main id="Inicio">
+   <main id="inicio"
     <section>
         <h3>Mi nombre es Naomi Guadalupe Hernández Cordero.</h3>
         <p>Este es el contenido de mi primer artículo en el blog.</p>
+        <img src="/src/images/Fotografía NGHC.jpg" alt="Fotografía de Naomi Hernández">
     </section>
    </main>
+   <div id="sobre-mi">
+    <h2>Sobre mí:</h2>
+    <p>Soy estudiante de Ingeniería Química, pero también me interesa la programación y el desarrollo web.</p>
+    <br>
+    <p>Mis pasatiempos son:</p>
+    <ul>
+        <li>Leer</li>
+        <li>Dibujar</li>
+        <li>Escribir</li>
+        <li>Jugar videojuegos</li>
+        <li>Aprender cosas nuevas</li>
+    <div/>
+    <div id="redes-sociales">
+    </ul>
+    <h2><strong>Redes sociales:</strong></h2>
+    <p>Mis redes sociales son: </p>
+    <ol>
+        <li>Github: <a href="https://github.com/Naomi-H-Cordero">Naomi-H-Cordero | Naomi H. Cordero<a/></li>
+        <li>instagram: <a href="https://www.instagram.com/naomigpehernandezcordero/">naomigpehernandezcordero | Naomi H.<span>🐑</span><a/></li>
+    </ol>
+    </div>
+    <div id=contactame>
+        <form action="#" method="post">
+            <h2><strong><em>Contáctame:</em></strong></h2>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+            <input type="submit" value="enviar">
+        </form>
+        <footer>
+            <p>Blog hecho como proyecto para el módulo 1 del curso de Frontend de Dev.F.</Dev></p>
+        </footer>
+    </div>
     </header>
 </body>
 </html>

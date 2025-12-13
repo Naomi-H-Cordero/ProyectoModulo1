@@ -1,14 +1,43 @@
 body {
-    background-color:black;
     font-family:'Times New Roman', Times, serif;
     font-size: larger;
+    margin:0;
+}
+#toggle{
+    display:none;
+}
+.switch{
+    position:fixed;
+    background-color: aqua;
+    color: black;
+    top:12px;
+    right:15px;
+    cursor:pointer;
+    font-size:medium;
+    padding:10px;
+    border-radius:20px;
+    border: rgb(239, 255, 254) 3px solid;
+}
+.contenido{
+    background-color:black;
     color:aliceblue;
-    font-style: inherit;
+    min-height:100vh;
+    padding: 40px;
+}
+#toggle:checked ~.contenido{
+    background-color:whitesmoke;
+    color:black;
+}
+#toggle:checked +.switch{
+    background:red;
+    color:white;
+    border: rgb(58, 0, 0) 2px solid;
 }
 .saludo {
     font-family:fantasy;
     color:rgba(247, 0, 255, 0.884);
     font-size: xx-large;
+    -webkit-text-stroke: 1px rgb(134, 2, 57);
 }
 .comienzo {
     font-family:cursive;
